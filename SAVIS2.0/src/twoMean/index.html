@@ -1,0 +1,132 @@
+---
+layout: default
+titlekey: twoMean.title
+---
+<link rel="stylesheet" href="{{base}}./twoMean.css">
+<div id="two-mean">
+  <h1>{% include translate.html key="twoMean.title" %}</h1>
+  <h2>1. {% include translate.html key="twoMean.enterData" %}</h2>
+  <input type="checkbox" style="float:right"/ checked>
+  <div class="section">
+    <div class="lhs">
+      <div class="lhs">
+        <select id="sample-select">
+          <option disabled selected>{% include translate.html key="twoMean.selectData" %}</option>
+          <!-- TODO(matthewmerrill): translate this -->
+          <option value="sample1">Sample 1</option>
+          <option value="sample2">Sample 2</option>
+        </select>
+        <textarea id="csv-input" placeholder="{% include translate.html key="twoMean.placeholder" %}"></textarea>
+        <button onclick="twoMean.loadData()" class="btn">{% include translate.html key="twoMean.loadData" %}</button>
+        <button onclick="twoMean.reset()" style = "margin-top:5px"class="btn">{% include translate.html key="twoMean.reset" %}</button>
+        <button class = "btn" id = "upload-btn" style = "margin-top: 5px"> {% include translate.html key="twoMean.upload" %}</button>
+        <input type = "file" id = "fileInput"  style  = "display: none;">
+      </div>
+      <div id="data-summary" class="stats">
+        <div>
+          <span>{% include translate.html key="twoMean.size1" %} </span>
+          <span summary="size1"></span>
+
+        </div>
+        <div>
+          <span>{% include translate.html key="twoMean.gp1Mean" %}</span>
+          <span summary="dataMean1"></span>
+        </div>
+        <div>
+          <span>{% include translate.html key="twoMean.size2" %} </span>
+          <span summary="size2"></span>
+
+        </div>
+        <div>
+          <span>{% include translate.html key="twoMean.gp2Mean" %}</span>
+          <span summary="dataMean2"></span>
+        </div>
+        <div>
+          <span>{% include translate.html key="twoMean.diffOfMean" %}</span>
+          <span summary="dataMeanDiff"></span>
+        </div>
+      </div>
+    </div>
+    <div class="rhs">
+      <div class="chart-wrap"><canvas id="data-chart-1"></canvas></div>
+      <div class="chart-wrap"><canvas id="data-chart-2"></canvas></div>
+    </div>
+  </div>
+  <h2>2. {% include translate.html key="twoMean.runSims" %}</h2>
+  <input type="checkbox" style="float:right"/ checked>
+  <div class="section">
+    <div class="lhs">
+      <h3>{% include translate.html key="twoMean.numSim" %}</h3>
+      <input id="num-simulations" type="number" value="1" min="1" max="100" disabled="need-data" />
+      <button onclick="twoMean.runSim()" onclick="" class="btn" disabled="need-data">{% include translate.html key="twoMean.runSim" %}</button>
+      <div class="stats">
+        <div>
+          <span>{% include translate.html key="twoMean.randomMean1" %}</span>
+          <span summary="sampleMean1">{% include translate.html key="twoMean.noData" %}</span>
+        </div>
+        <div>
+          <span>{% include translate.html key="twoMean.randomMean2" %}</span>
+          <span summary="sampleMean2">{% include translate.html key="twoMean.noData" %}</span>
+        </div>
+        <div>
+          <span>{% include translate.html key="twoMean.diffOfSampleMean" %}</span>
+          <span summary="sampleMeanDiff">{% include translate.html key="twoMean.noData" %}</span>
+        </div>
+      </div>
+    </div>
+    <div class="rhs">
+      <h3>{% include translate.html key="twoMean.mostRecentDraw" %}</h3>
+      <div class="chart-wrap"><canvas id="sample-chart-1"></canvas></div>
+      <div class="chart-wrap"><canvas id="sample-chart-2"></canvas></div>
+    </div>
+  </div>
+  <h2>3. {% include translate.html key="twoMean.subTitle3" %}</h2>
+  <input type="checkbox" style="float:right"/ checked>
+  <div id="two-mean-diff" class="section">
+    <div class="lhs">
+      <select id="tail-direction" disabled="need-results">
+        {% include tailChartDirectionOptions.html %}
+      </select>
+      <span>{% include translate.html key="twoMean.selectAllExtreme" %}</span><input type="number" id="tail-input" value="0" step="any" disabled="need-results">
+      <hr>
+      <div class="stats">
+        <div>
+          <span>{% include translate.html key="twoMean.oriDiffOfMean" %}</span>
+          <span summary="dataMeanDiff">{% include translate.html key="twoMean.noData" %}</span>
+        </div>
+        <div>
+          <span>{% include translate.html key="twoMean.meanSampleDiff" %}</span>
+          <span summary="mean">{% include translate.html key="twoMean.noData" %}</span>
+        </div>
+        <div>
+          <span>{% include translate.html key="twoMean.stdSampleDiff" %}</span>
+          <span summary="stddev">{% include translate.html key="twoMean.noData" %}</span>
+        </div>
+        <br>
+        <div>
+          <span>{% include translate.html key="twoMean.totalSamples" %}</span>
+          <span summary="total" summaryint>{% include translate.html key="twoMean.noData" %}</span>
+        </div>
+        <div>
+          <span>{% include translate.html key="twoMean.numSelected" %}</span>
+          <span summary="chosen" summaryint>{% include translate.html key="twoMean.noData" %}</span>
+        </div>
+        <div>
+          <span>{% include translate.html key="twoMean.proportionSelcted" %}</span>
+          <span summary="proportion">{% include translate.html key="twoMean.noData" %}</span>
+        </div>
+      </div>
+    </div>
+    <div class="rhs">
+      <div class="chart-wrap"><canvas id="diff-chart"></canvas></div>
+    </div>
+  </div>
+</div>
+
+<script src="{{base}}../lib/Chart.bundle.min.js"></script>
+{% if jekyll.environment == 'development' %}
+<script src="./twoMeanEntry.js" type="module"></script>
+{% else %}
+<script src="./twoMean.bundle.js"></script>
+{% endif %}
+

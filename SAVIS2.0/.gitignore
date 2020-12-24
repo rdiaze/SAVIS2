@@ -1,0 +1,9 @@
+node_modules
+dist
+dist_electron
+_site/
+_site_en/
+_site_es/
+.vs/
+Gemfile.lock
+.vscode/

@@ -1,0 +1,51 @@
+---
+---
+
+#one-mean {
+  h3 {
+    margin-top: 1ch;
+    width: 100%;
+    .toggle-box {
+      float: right;
+    }
+  }
+  .chart-input-form {
+    display: flex;
+    // border-bottom: 3px green solid;
+    .data-form {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      width: 38ch;
+      padding: 5px;
+      margin-bottom: 10px;
+      text-align: justify;
+      p {
+        margin-top: 1px;
+        margin-bottom: 1px;
+      }
+      .right-num {
+        text-align: right;
+        float: right;
+      }
+    }
+    #run-sim-error-msg {
+      color: red;
+      text-align: center;
+    }
+    .chart-wrap {
+      flex: 8;
+    }
+    label,
+    input[type="number"] {
+      display: inline-block;
+    }
+  }
+  .btn {
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+  .hideDataSection{
+    display: none
+  }
+}

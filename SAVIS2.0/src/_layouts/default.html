@@ -1,0 +1,34 @@
+{%- include base -%}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" content="application/javascript">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{{site.title}} | {% if page.titlekey %}{%include translate.html key=page.titlekey%}{%else%}{{page.title}}{%endif%}</title>
+    <link rel="stylesheet" href="{{base}}/css/base.css"></link>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+    <nav id="navbar">
+      <h1 class="logo"><a href="{{base}}/../" class="text-primary">SAVIS</a></h1>
+      <ul>
+        <li><a href="{{base}}/index.html">{% include translate.html key="home.title" %}</a></li>
+        
+        <li><a href="{{base}}/about/index.html">{% include translate.html key="about.title" %}</a></li>
+{% if site.distribution == 'web' and site.downloadLink %}
+        <li><a href="{{site.downloadLink}}">{% include translate.html key="download.title" %}</a></li>
+{% endif %}
+{% if site.distribution == 'web' and site.manualLink %}
+        <li><a href="{{site.manualLink}}">{% include translate.html key="userManual.title" %}</a></li>
+{% endif %}
+        
+      </ul>
+    </nav>
+    <div id="main-content">{{content}}</div>
+    <footer id="main-footer" class="bg-dark text-center py-1">
+      <div class="container">
+        <p>Copyright ©2019  CSUS. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

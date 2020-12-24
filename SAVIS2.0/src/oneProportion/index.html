@@ -1,0 +1,85 @@
+---
+layout: default
+titlekey: oneProportion.title
+---
+
+<link rel="stylesheet" href="{{base}}./oneProportion.css">
+<div id="one-proportion">
+  <h1> {% include translate.html key="oneProportion.title" %}</h1>
+  </p>
+    <div class="chart-input-form">
+    <div id="control" class="container">
+      <form>
+        <div class="form-group">
+          <label for="probability"
+            >{% include translate.html key="oneProportion.probHeads" %} <span id="probDisplay">0.5</span
+          ></label>
+          <input type="range" min="0" max="1" step="0.01" class="slider" id="probability" />
+        </div>
+        <div class="form-group">
+          <label for="coins"
+            >{% include translate.html key="oneProportion.tosses1" %} </label>
+          <input type="number" min="1" max ="500" id="coins" value = "5"/>
+        </div>
+        <button type="reset" value="reset" class="btn" id="resetBtn">
+          {% include translate.html key="oneProportion.reset" %}
+        </button>
+        <hr />
+        <div class="form-group">
+          <label for="draws">{% include translate.html key="oneProportion.addSamples" %}</label>
+          <input type="number" min="1" id="draws" value = "1"/>
+        </div>
+
+        <button type="submit" value="sample" class="btn" id="sampleBtn">
+          {% include translate.html key="oneProportion.drawSamples" %}
+        </button>
+        <hr />
+        <div class="form-group">
+          <p>{% include translate.html key="oneProportion.totalSamples" %}</p>
+          <p class ="right-num" id="totalSamples">0</p>
+          <p>{% include translate.html key="oneProportion.meanNoOfHeads" %}</p>
+          <p class ="right-num" id="meanDisplay">NaN</p>
+          <p>{% include translate.html key="oneProportion.standardDeviation" %} &sigma;:</p>
+          <p class ="right-num" id="stdDisplay">NaN</p>
+          <h4 for="lowerBound">{% include translate.html key="oneProportion.selectInterval" %} <span id="tossesDisplay">5</span> {% include translate.html key="oneProportion.tosses2" %} </h4>
+          <label for="probability"
+            >{% include translate.html key="oneProportion.minHead"%} <span class ="right-num" id="lowerDisplay">0</span
+          ></label>
+          <input type="range" min="0" max="500" step="1" id="lowerSelectedRange" class="slider" value="0"/>
+          <label for="probability"
+            >{% include translate.html key="oneProportion.maxHead"%} <span class ="right-num" id="upperDisplay">0</span
+          ></label>
+          <input type="range" min="0" max="500" step="1" id="upperSelectedRange" class="slider" value="0"/>
+          <p>{% include translate.html key="oneProportion.samplesInterval" %} </p>
+          <p class ="right-num" id="sampleInRangeDisplay">0</p>
+          <p>{% include translate.html key="oneProportion.proportion" %} </p>
+          <p class ="right-num" id="proportionDisplay">0 / 0 = NaN</p>
+        </div>
+
+      </form>
+    </div>
+    <div id="view">
+      <div><canvas id="chart" class="container"></canvas></div>
+      <div id="remarks">
+        <table>
+          <tr>
+            <td>{% include translate.html key="oneProportion.remarkTitle" %}</td>
+            <td>
+              {% include translate.html key="oneProportion.remark1" %}
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>{% include translate.html key="oneProportion.remark2" %}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    </div>
+</div>
+<script src="{{base}}../lib/Chart.bundle.min.js"></script>
+{% if jekyll.environment == 'development' %}
+<script src="./oneProportionEntry.js" type="module"></script>
+{% else %}
+<script src="./oneProportion.bundle.js"></script>
+{% endif %}

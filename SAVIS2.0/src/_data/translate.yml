@@ -1,0 +1,441 @@
+en:
+  about:
+    contact: Contact
+    content1: Statistical Analysis Visualizations for Introductory Statistics (SAVIS)
+      was conceived as part of a collaborative research project on statistical education
+      between the Department of Mathematics and Statistics at California State University
+      Sacramento (CSUS) and the School of Mathematics of the Universidad Autónoma
+      de Yucatán (UADY). SAVIS is an educational tool to help to intuitively understand
+      concepts of tests of statistical hypotheses and confidence intervals using visualizations
+      based on resampling and randomization techniques. SAVIS has an online and a
+      stand-alone version (both freely available) in English and Spanish.
+    content2: 'SAVIS was created in the Spring of 2019  and extended in the Spring
+      of 2020 by the following graduating seniors from the Department of Computer
+      Science at CSUS under the direction of Rafael E. Diaz Escamilla, a professor
+      in the Department of Mathematics and Statistics at CSUS:'
+    contributors: Contributors
+    title: About
+  download:
+    title: Download
+  home:
+    title: Home
+  oneMean:
+    InInterval: Values in Interval
+    NotInInterval: Values not in Interval
+    Samples: Samples
+    build: Build
+    chartTitle2: Generate Hypothetical Population
+    chartTitle4: Sampling Distribution of Means
+    ci: Confidence Level
+    cititle: One Mean Confidence Interval
+    drawSample: Draw Sample
+    enterData: 'Enter Data:'
+    errorNoPopulation: No population data
+    errorNotEnoughElements: Sample exceeds population
+    extremeSamples: Sample means at least as extreme as
+    hypotheticalPopulation: Hypothetical Population
+    id: ID
+    increaseData: Increase data
+    loadData: Load Data
+    lower: 'Lower Bound:'
+    mean1: 'Mean:'
+    mean2: Mean
+    meanOfsamplesMeans: 'Mean of sample means:'
+    mostRecentDraw: Most Recent Draw
+    noData: NaN
+    noOfSample: '# of samples'
+    oneTailLeft: One Tail Left
+    oneTailRight: One Tail Right
+    original: Original Dataset
+    originalSize: 'Size n:'
+    pleaseSelect: Type of Test
+    proportion: 'Proportion:'
+    reset: Reset
+    runSim: Run Simulation
+    sample: Sample XXX
+    sampleMeans: sample means
+    sampleNo: '#'
+    sampleSize: 'Sample size:'
+    samples: samples
+    sd1: 'Standard Deviation:'
+    selectData: Select Sample Data
+    shiftMean: Shift mean
+    std: Standard Deviation
+    textAreaPlaceHolder: Please enter data or drop columns from cvs file here (no
+      column titles - see sample data in drop down menu)
+    times: times
+    title: One Mean Hypothesis Testing
+    totalNoOfSamples: 'Total # of samples:'
+    totalSamples: 'Total # samples:'
+    twoTail: Two Tails
+    upload: Upload Data File
+    upper: 'Upper Bound:'
+    value: Value
+  oneProportion:
+    InInterval: Values in Interval
+    NotInInterval: Values not in Interval
+    Samples: Samples
+    addSamples: Add samples
+    alertAtLeastOne: You must have at least one successes and failures
+    binomial: Binomial Prediction
+    build: Build
+    ci: Confidence Level
+    cititle: One Proportion Confidence Interval
+    data: Data
+    drawSamples: Draw Samples
+    enterData: 'Enter Data:'
+    failures: Failures
+    inc: Increase By
+    incrementWarning: Please increment the data for group
+    incrementZeroWarning: Increase by factor must be greater than zero
+    loadData: Load Data
+    lower: 'Lower Bound:'
+    maxHead: 'Max # of head:'
+    meanNoOfHeads: 'Mean # of heads:'
+    meanOfSampleDiff: Mean of Sample Proportions
+    minHead: 'Min # of heads:'
+    mostRecentDraw: Most Recent Draw
+    noData: NaN
+    noOfHeads: '# of heads in'
+    noOfSamples: '# of samples'
+    noOfSims: '# of Simulations'
+    probHeads: 'Probability of Heads p:'
+    propOfRandom: Proportion of Successes of Most Recent Draw
+    proportion: 'Proportion:'
+    proportion1: Proportion of Successes
+    remark1: '1. Double click the graph to zoom in/out if # of tosses >= 50.'
+    remark2: 2. Click the legend to hide/show corresponding info in graph.
+    remarkTitle: 'Remarks:'
+    reset: Reset
+    runSims: Run Simulations
+    samplesInterval: '# of samples in interval:'
+    selectInterval: 'Select interval for # of heads in'
+    selected: Selected
+    standardDeviation: Standard Deviation
+    std: 'Standard Deviation:'
+    subTitle3: Sampling Distribution of Proportions
+    successes: Successes
+    title: One Proportion Hypothesis Testing
+    tosses1: 'Tosses:'
+    tosses2: 'tosses:'
+    totalSamples: 'Total samples:'
+    upper: 'Upper Bound:'
+  site:
+    title: Statistical Analysis Visualizations for Introductory Statistics
+  tailChart:
+    oneTailLeft: One Tail Left
+    oneTailRight: One Tail Right
+    pleaseSelect: Type of Test
+    twoTail: Two Tails
+  twoMean:
+    InInterval: Values in Interval
+    NotInInterval: Values not in Interval
+    Samples: Samples
+    alertAtLeastOne: Group 1 and Group 2 must both have at least one element.
+    build: Build
+    ci: Confidence Level
+    cititle: Two Means Confidence Interval
+    diffOfMean: 'Difference of Means (Mean 1 - Mean 2):'
+    diffOfSampleMean: 'Difference of Means (Randomized Samples):'
+    differences: Differences
+    enterData: Enter Data
+    gp1Mean: 'Mean 1 (Group 1):'
+    gp1SD: 'Standard Deviation (Group 1):'
+    gp2Mean: 'Mean 2 (Group 2):'
+    gp2SD: 'Standard Deviation (Group 2):'
+    group1: Group 1
+    group2: Group 2
+    inc1: Increase By (Group 1)
+    inc2: Increase By (Group 2)
+    incrementWarning: Please increment the data for group
+    incrementZeroWarning: Increase by factor must be greater than zero
+    loadData: Load Data
+    lower: 'Lower Bound:'
+    meanSampleDiff: 'Mean of Sample Differences:'
+    mostRecentDraw: Most Recent Draw
+    noData: NaN
+    numSelected: '# of Extreme Differences:'
+    numSim: '# of Simulations'
+    oriDiffOfMean: 'Original Dataset Difference of Means:'
+    placeholder: Enter or Drop CSV with first column as group number (1 or 2) and
+      second column as variable. No colunm names (see sample data in drop down menu)
+    proportionSelcted: Proportion of Extreme Differences
+    randomMean1: 'Mean of Randomized Sample to Group 1:'
+    randomMean2: 'Mean of Randomized Sample to Group 2:'
+    randomSD1: 'Standard Deviation of Randomized Sample to Group 1:'
+    randomSD2: 'Standard Deviation of Randomized Sample to Group 2:'
+    reset: Reset
+    runSim: Run Simulation
+    runSims: Run Simulations
+    selectAllExtreme: Select differences at least as extreme as
+    selectData: Select Sample Data
+    size1: 'Size n (Group 1):'
+    size2: 'Size n (Group 2):'
+    stdSampleDiff: 'Standard Deviation:'
+    subTitle3: Sampling Distribution of Difference of Means
+    title: Two Means Hypothesis Testing
+    totalSamples: 'Total # samples:'
+    upload: Upload Data File
+    upper: 'Upper Bound:'
+  twoProportions:
+    InInterval: Values in Interval
+    NotInInterval: Values not in Interval
+    alertAtLeastOne: Group A and Group B must both have at least one element.
+    build: Build
+    ci: Confidence Level
+    cititle: Two Proportions Confidence Interval
+    diffOfProp: Difference of Proportions
+    differences: Differences
+    enterData: 'Enter Data:'
+    failures: Failures
+    groupA: Group A
+    groupB: Group B
+    inc: Increase By
+    incrementWarning: Please increment the data for group
+    incrementZeroWarning: Increase by factor must be greater than zero
+    loadData: Load Data
+    lower: 'Lower Bound:'
+    meanOfSampleDiff: 'Mean of Sample Differences:'
+    mostRecentDraw: Most Recent Draw
+    noData: NaN
+    noOfSelected: '# Extreme Differences:'
+    noOfSims: '# of Simulations'
+    noSim: N/A
+    oriDatasetDiff: 'Difference of Proportions in Original Data:'
+    propGroupA: Proportion of Succeses in Group A
+    propGroupB: Proportion of Successes in Group B
+    propOfRandomA: Proportion of Successes Randomized to Group A
+    propOfRandomB: Proportion of Successes Randomized to Group B
+    propSamplesSelected: 'Proportion Extreme Differences:'
+    runSims: Run Simulations
+    selectAllExtreme: 'Select differences as extreme as:'
+    std: 'Standard Deviation:'
+    subTitle3: Sampling Distribution of Difference of Proportions
+    successes: Successes
+    title: Two Proportions Hypothesis Testing
+    totalSamples: 'Total # Samples:'
+    upper: 'Upper Bound:'
+  userManual:
+    title: User Manual
+es:
+  about:
+    contact: Contacto
+    content1: Las visualizaciones de análisis estadístico para estadísticas introductorias
+      (SAVIS) se concibieron como parte de un proyecto de investigación colaborativa
+      sobre educación estadística entre el Departamento de Matemáticas y Estadísticas
+      de la Universidad Estatal de California en Sacramento (CSUS) y la Facultad de
+      Matemáticas de la Universidad Autónoma de Yucatán (UADY) . SAVIS es una herramienta
+      educativa para ayudar a comprender intuitivamente conceptos de pruebas de hipótesis
+      estadísticas e intervalos de confianza mediante visualizaciones basadas en técnicas
+      de muestreo y aleatorización. SAVIS tiene una versión en línea y una versión
+      independiente (ambas disponibles gratuitamente) en inglés y español.
+    content2: 'SAVIS fue creado en la primavera de 2019 y extendido en la primavera
+      de 2020 por los siguientes graduados del Departamento de Informática de CSUS
+      bajo la dirección de Rafael E. Díaz Escamilla, profesor del Departamento de
+      Matemáticas y Estadística de CSUS:'
+    contributors: Contribuidores
+    title: Acerca de SAVIS
+  download:
+    title: Bajar Archivo
+  home:
+    title: Inicio
+  oneMean:
+    InInterval: Valores en intervalo
+    NotInInterval: Valores no en intervalo
+    Samples: Muestras
+    build: Construir
+    chartTitle2: Generar Población Hipotética
+    chartTitle4: Distribucón de las Medias
+    ci: Nivel de confianza
+    cititle: Un intervalo de confianza medio
+    drawSample: Obtenga la Muestra
+    enterData: Teclee los Datos
+    errorNoPopulation: No hay población
+    errorNotEnoughElements: La muestra excede la población
+    extremeSamples: Medias iguales a o más extremas que
+    hypotheticalPopulation: Poblacíon Hipotética
+    id: '#'
+    increaseData: Incremente la muestra
+    loadData: Cargar Datos
+    lower: Límite inferior
+    mean1: 'Media:'
+    mean2: Media
+    meanOfsamplesMeans: 'Media de las medias:'
+    mostRecentDraw: Ultima Muestra
+    noData: NaN
+    noOfSample: '# de muestras'
+    oneTailLeft: Una cola (izquierda)
+    oneTailRight: Una cola (derecha)
+    original: Datos Originales
+    originalSize: 'Talla n:'
+    pleaseSelect: Tipo de Prueba
+    proportion: 'Proporción:'
+    reset: Reinicio
+    runSim: Correr Simulación
+    sample: Muestra XXX
+    sampleMeans: medias
+    sampleNo: '#'
+    sampleSize: Tamaño de muestra
+    samples: muestras
+    sd1: 'Desviación Estándar:'
+    selectData: Seleccione Datos Muestra
+    shiftMean: Desplace la media
+    std: Desviación Estándar
+    textAreaPlaceHolder: Teclee datos aquí o arrastre archivo csv (sin títulos de
+      columna - ver datos muestra en el menu de arriba)
+    times: veces
+    title: Una Media Prueba de hipótesis
+    totalNoOfSamples: 'Total # de muestras:'
+    totalSamples: 'Total # muestras:'
+    twoTail: Dos colas
+    upload: Subir archivo de datos
+    upper: Límite superior
+    value: Dato
+  oneProportion:
+    InInterval: Valores en intervalo
+    NotInInterval: Valores no en intervalo
+    Samples: Muestras
+    addSamples: Agregar Muestras
+    alertAtLeastOne: Debe tener al menos uno éxitos y fracasos
+    binomial: Predicción Binomial
+    build: Construir
+    ci: Nivel de confianza
+    cititle: Intervalo de confianza de una proporción
+    data: Datos
+    drawSamples: 'Obtener Muestras:'
+    enterData: Teclee los Datos
+    failures: Fracasos
+    inc: Aumentado por
+    incrementWarning: Incremente los datos para el grupo
+    incrementZeroWarning: El aumento por factor debe ser mayor que cero
+    loadData: Cargar Datos
+    lower: Límite inferior
+    maxHead: 'Max # de caras:'
+    meanNoOfHeads: 'Media # de caras:'
+    meanOfSampleDiff: Media de proporciones muestrales
+    minHead: 'Min # de caras:'
+    mostRecentDraw: Ultima Muestra
+    noData: NaN
+    noOfHeads: '# de muestras en'
+    noOfSamples: '# de muestras'
+    noOfSims: '# Simulaciones'
+    probHeads: 'Probabilidad de Caras p:'
+    propOfRandom: Proporción de éxitos del sorteo más reciente
+    proportion: 'Proporción:'
+    proportion1: 'Proporción de éxitos:'
+    remark1: '1. Haga dos clics en al gráfica para agrandarla o disminuirla si el
+      # de lanzamientos es >= 50.'
+    remark2: 2. Haga un clic en las leyendas para mostrar/esconder infromación correspondiente.
+    remarkTitle: 'Notas:'
+    reset: Reinicio
+    runSims: Correr Simulaciones
+    samplesInterval: '# de muestras en intervalo:'
+    selectInterval: 'Seleccione intervalo para el # de caras en'
+    selected: Seleccionadas
+    standardDeviation: Desviación Estándar
+    std: 'Desviación Estándar:'
+    subTitle3: Distribución muestral de proporciones
+    successes: Éxitos
+    title: Una Proporción Prueba de hipótesis
+    tosses1: 'Lanzamientos:'
+    tosses2: 'lanzamientos:'
+    totalSamples: 'Total # de muestras:'
+    upper: Límite superior
+  site:
+    title: Statistical Analysis Visualizations for Introductory Statistics
+  tailChart:
+    oneTailLeft: Una cola (izquierda)
+    oneTailRight: Una cola (derecha)
+    pleaseSelect: Tipo de Prueba
+    twoTail: Dos colas
+  twoMean:
+    InInterval: Valores en intervalo
+    NotInInterval: Valores no en intervalo
+    Samples: Muestras
+    alertAtLeastOne: Grupo 1 y Grupo 2 tienen que tener ambos al menos un elemento.
+    build: Construir
+    ci: Nivel de confianza
+    cititle: Intervalo de confianza de dos medios
+    diffOfMean: 'Diferencia entre Medias (Media 1 - Media 2):'
+    diffOfSampleMean: 'Differencia entre medias (de muestras aleatorizadas):'
+    differences: Diferencias
+    enterData: Teclee los Datos
+    gp1Mean: 'Media 1 (Grupo 1):'
+    gp1SD: 'Desviación Estándar (Grupo 1):'
+    gp2Mean: 'Media 2 (Grupo 2):'
+    gp2SD: 'Desviación Estándar (Grupo 2):'
+    group1: Grupo 1
+    group2: Grupo 2
+    inc1: Aumentar en (Grupo 1)
+    inc2: Aumentar en (Grupo 2)
+    incrementWarning: Incremente los datos para el grupo
+    incrementZeroWarning: El aumento por factor debe ser mayor que cero
+    loadData: Cargar Datos
+    lower: Límite inferior
+    meanSampleDiff: 'Media de las Diferencias:'
+    mostRecentDraw: Ultima Muestra
+    noData: NaN
+    numSelected: '# de Diferencias Extremas:'
+    numSim: '# de Simulaciones'
+    oriDiffOfMean: 'Diferencia de Medias en Datos Originales:'
+    placeholder: 'Teclee datos o arrastre aquí archivo csv: primera columa para codigo
+      de grupos (1 o 2), segunda colunmna para la variable (sin títulos de columna
+      - ver datos muestra en el menu de arriba)'
+    proportionSelcted: 'Proporción de Diferencias Extremas:'
+    randomMean1: 'Media de la Muestra Randomizada al Grupo 1:'
+    randomMean2: 'Media de la Muestra Randomizada al Grupo 2:'
+    randomSD1: 'Desviación Estándar de la Muestra Randomizada al Grupo 1:'
+    randomSD2: 'Desviación Estándar de la Muestra Randomizada al Grupo 2:'
+    reset: Reinicio
+    runSim: Correr Simulacón
+    runSims: Correr Simulaciones
+    selectAllExtreme: 'Seleccionar las diferencias iguales a o más extremas que:'
+    selectData: Seleccione Datos Muestra
+    size1: 'Tamaño n (Grupo 1):'
+    size2: 'Tamaño n (Grupo 2):'
+    stdSampleDiff: 'Desviación Estándar:'
+    subTitle3: Distribución de diferencias de medias
+    title: Dos Medias Prueba de hipótesis
+    totalSamples: 'Total # de muestras:'
+    upload: Subir archivo de datos
+    upper: Límite superior
+  twoProportions:
+    InInterval: Valores en intervalo
+    NotInInterval: Valores no en intervalo
+    alertAtLeastOne: Grupo A y Grupo B tienen que tener ambos al menos un elemento.
+    build: Construir
+    ci: Nivel de confianza
+    cititle: Intervalo de confianza de dos proporciones
+    diffOfProp: Differencias de Proporciones
+    differences: Diferencias
+    enterData: Teclee los Datos
+    failures: Fracasos
+    groupA: Grupo A
+    groupB: Grupo B
+    inc: Aumentado por
+    incrementWarning: Incremente los datos para el grupo
+    incrementZeroWarning: El aumento por factor debe ser mayor que cero
+    loadData: Subir Datos
+    lower: Límite inferior
+    meanOfSampleDiff: 'Media de las Diferencias de Proporciones:'
+    mostRecentDraw: Ultima Muestra
+    noData: NaN
+    noOfSelected: '# Diferencias Extremas:'
+    noOfSims: '# Simulaciones'
+    noSim: N/A
+    oriDatasetDiff: 'Differencia de Proporciones en Datos Originales:'
+    propGroupA: Proporción de Exitos en Grupo A
+    propGroupB: Proporción de Exitos en Grupo B
+    propOfRandomA: Proporción de Exitos Randomizados al Grupo A
+    propOfRandomB: Proporción de Exitos Randomizados al Grupo B
+    propSamplesSelected: Proporción de Diferencias Extremas
+    runSims: Correr Simulaciones
+    selectAllExtreme: 'Seleccionar las diferencias iguales a o más extremas que:'
+    std: 'Desviación Estándar:'
+    subTitle3: Distribución de las Differencias de Proporciones
+    successes: Exitos
+    title: Dos Proporciones Prueba de hipótesis
+    totalSamples: 'Total # de Muestras:'
+    upper: Límite superior
+  userManual:
+    title: Manual del Usuario
